@@ -1,7 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by pooja</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Lobster&family=Poppins:ital,wght@1,100;1,200&display=swap" rel="stylesheet">
+
+
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+<style>
+  body{
+    margin: 0 auto;
+      background:black;
+      padding:20px;
+    
+    }
+    
+    #welcome-section{
+      height:100vh;
+      padding:20px;
+      margin:10px;
+      border:1px solid blueviolet;
+      border-radius:20px;
+      background:linear-gradient(to right,black,grey);
+      color:white;
+      height:400px;
+      display:flex;
+      align-items: center;
+      /* align-self:center; */
+      justify-content: center;
+      
+     
+      
+    }
+    section{
+      text-align:center;
+    }
+    span{
+      color:orange;
+    }
+    a{
+      
+      text-decoration:none;
+      color:white;
+      font-weight:bold;
+      border:1px solid blueviolet;
+      
+      padding: 12px 25px;
+      background:linear-gradient(to right,black,grey);
+      box-shadow:grey;
+      display:flex;
+      border-radius:50%;
+      margin:10px;
+      justify-content:center;
+     
+    }
+    a.cert{
+      border:none;
+      background:none;
+    }
+    .certificate{
+      padding:20px;
+      border:1px dotted grey;
+      border-radius:20px;
+    }
+    h3,p{
+      color:white;
+      font-weight:bold;
+    }
+    section#projects{
+      background:teal;
+      border:2px solid blueviolet;
+      border-radius:20px;
+      margin-top:10px;
+      padding:50px;
+      color:white;
+      display:flex;
+      justify-content:space-evenly;
+      text-align:center;
+      
+      
+    }
+    .box,.box-1,.box-2,.box-3,.mini-box,.box-box{
+      border:1px solid white;
+      flex-basis:400px;
+      padding:10px;
+      border-radius:7px;
+      margin:5px;
+      align-self:center;
+      
+    }
+    
+    .box-2,.mini-box,.box-box{
+      background:black;
+     
+      
+    }
+    .box,.box-box{
+      padding:40px;
+      
+    }
+    
+    .mini{
+      display:flex;
+      justify-content:space-between;
+      margin:10px;
+      word-break: break;
+    }
+    ul{
+      list-style:none;
+    }
+    
+    
+    .project{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-evenly;
+      align-items: center;
+      border:1px solid blueviolet;
+      border-radius:20px;
+      background:linear-gradient(to right,black,grey);
+      padding:10px;
+      margin:10px;
+    }
+    
+    
+    
+    .snake,.eduwell,.app,.trivia,.puppy,.digital{
+      width:400px;
+      height:400px;
+      object-fit:cover;
+      margin:10px;
+      padding:10px;
+      box-shadow: 1px 2px  white; 
+    }
+    
+    .link{
+      border:2px solid blueviolet;
+      border-radius:5px;
+      background:linear-gradient(to right,black,grey);;
+     
+    }
+    
+    
+    @media (max-width:665px){
+    
+      body{
+        margin:0 ;
+        background: white;
+      }
+    
+    
+    
+      .flex,.project{
+        display:block;
+        
+      }
+    
+      .link{
+        display:block;
+        width: 40px;;
+      }
+    
+    
+      .link,a{
+        margin:0 auto;
+      }
+      section#projects{
+        flex-direction: column;
+      }
+      .box,.box-1,.box-2,.box-3,.mini-box,.box-box{
+           flex-basis:300px;
+      }
+      .box-3,.box-1,.box{
+        background: black;
+      }
+      .mini-box,.box-box,.box-2{
+        background: teal;
+      }
+      
+      
+    
+      
+      .certificate{
+        background: black;
+      }
+      .anchor{
+      
+        margin:15px;
+      }
+      
+    }
+    
+    .footer{
+      display:flex;
+      text-align:center;
+      justify-content:center;
+      
+    }
+    .anchor{
+      width:100px;
+      height:100px;
+      margin-top:50px;
+      display:flex;
+      align-items:center;
+      background:linear-gradient(to right,black,grey);;
+      
+      
+      
+    }
+  </style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
 <html>
   <head>
     <title>my portfolio</title>
-    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <navbar id="navbar">
@@ -14,16 +231,17 @@
       
     </navbar>
     <section id="welcome-section">
-      <h1>WELCOME TO MY PORTFOLIO</h1>
-      <P>MY NAME IS <span>POOJA</span>.I AM A <span><em>SELF TAUGHT</em></span><em> FRONTEND-DEVELOPER</em>.</P>
-      
-      <P>projects i have made are all in HTML n CSS and Javascript
-      </p>
-    <p>currently i am studying react</p>
-    <P>projects i have made are all in HTML n CSS and Javascript
-      </p>
-    <p>currently i am studying react</p>
-      
+      <div>
+          <h1>WELCOME TO MY PORTFOLIO</h1>
+          <P>MY NAME IS <span>POOJA</span>.I AM A <span><em>SELF TAUGHT</em></span><em> FRONTEND-DEVELOPER</em>.</P>
+          
+          <P>projects i have made are all in HTML n CSS and Javascript
+          </p>
+        <p>currently i am studying react</p>
+        <P>projects i have made are all in HTML n CSS and Javascript
+          </p>
+        <p>currently i am studying react</p>
+     </div>
     </section>
     <section id="projects">
      <div class="box">
@@ -135,14 +353,14 @@
   <h3>OPEN SOURCE CERTIFICATIONS:</h3>
   <ul>
     <li>
-      <a href="https://freecodecamp.org/certification/poojadby872/javascript-algorithms-and-data-structures" target="_blank" class="cert">freeCodeCamp: Data Structure and Algorithm in Javascript</a>
+      <a href="https://freecodecamp.org/certification/poojadby872/javascript-algorithms-and-data-structures" class="cert">freeCodeCamp: Data Structure and Algorithm in Javascript</a>
     </li>
     
     <li>
-      <a href="#" target="_blank" class="cert">freeCodeCamp: Responsive Web Design</a>
+      <a href="#" class="cert">freeCodeCamp: Responsive Web Design</a>
     </li>
     <li>
-      <a href="https://www.hackerrank.com/certificates/b302c2a9c837" target="_blank" class="cert">HackerRank: Python Basics</a>
+      <a href="" class="cert">HackerRank: Python Basics</a>
     </li>
   </ul>
  
@@ -164,4 +382,9 @@ my github link</a>
   
 </footer>
   </body>
+</html>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
 </html>
