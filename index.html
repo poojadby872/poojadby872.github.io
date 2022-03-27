@@ -1,283 +1,442 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Lobster&family=Poppins:ital,wght@1,100;1,200&display=swap" rel="stylesheet">
-
-
-  <!-- <link rel="stylesheet" href="./style.css"> -->
-<style>
-  body{
-    margin: 0 auto;
-      background:black;
-      padding:20px;
-      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-    }
-    
-    #welcome-section{
-      height:100vh;
-      padding:20px;
-      margin:10px;
-      border:1px solid blueviolet;
-      border-radius:20px;
-      background:linear-gradient(to right,black,grey);
-      color:white;
-      height:400px;
-      display:flex;
-      align-items: center;
-      /* align-self:center; */
-      justify-content: center;
-      
-     
-      
-    }
-    section{
-      text-align:center;
-    }
-    span{
-      color:orange;
-    }
-    a{
-      
-      text-decoration:none;
-      color:white;
-      font-weight:bold;
-      border:1px solid blueviolet;
-      
-      padding: 12px 25px;
-      background:linear-gradient(to right,black,grey);
-      box-shadow:grey;
-      display:flex;
-      border-radius:50%;
-      margin:10px;
-      justify-content:center;
-     
-    }
-    a.cert{
-      border:none;
-      background:none;
-    }
-    .certificate{
-      padding:20px;
-      border:1px dotted grey;
-      border-radius:20px;
-    }
-    h3,p{
-      color:white;
-      font-weight:bold;
-    }
-    section#projects{
-      background:teal;
-      border:2px solid blueviolet;
-      border-radius:20px;
-      margin-top:10px;
-      padding:50px;
-      color:white;
-      display:flex;
-      justify-content:space-evenly;
-      text-align:center;
-      
-      
-    }
-    .box,.box-1,.box-2,.box-3,.mini-box,.box-box{
-      border:1px solid white;
-      flex-basis:400px;
-      padding:10px;
-      border-radius:7px;
-      margin:5px;
-      align-self:center;
-      
-    }
-    
-    .box-2,.mini-box,.box-box{
-      background:black;
-     
-      
-    }
-    .box,.box-box{
-      padding:40px;
-      
-    }
-    
-    .mini{
-      display:flex;
-      justify-content:space-between;
-      margin:10px;
-      word-break: break;
-    }
-    ul{
-      list-style:none;
-    }
-    
-    
-    .project{
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:space-evenly;
-      align-items: center;
-      border:1px solid blueviolet;
-      border-radius:20px;
-      background:linear-gradient(to right,black,grey);
-      padding:10px;
-      margin:10px;
-    }
-    
-    
-    
-    .snake,.eduwell,.app,.trivia,.puppy,.digital{
-      width:400px;
-      height:400px;
-      object-fit:cover;
-      margin:10px;
-      padding:10px;
-      box-shadow: 1px 2px  white; 
-    }
-    
-    .link{
-      border:2px solid blueviolet;
-      border-radius:5px;
-      background:linear-gradient(to right,black,grey);;
-     
-    }
-    
-    
-    @media (max-width:665px){
-    
-      body{
-        margin:0 ;
-        background: white;
-      }
-    
-    
-    
-      .flex,.project{
-        display:block;
-        
-      }
-    
-      .link{
-        display:block;
-        width: 40px;;
-      }
-    
-    
-      .link,a{
-        margin:0 auto;
-      }
-      section#projects{
-        flex-direction: column;
-      }
-      .box,.box-1,.box-2,.box-3,.mini-box,.box-box{
-           flex-basis:300px;
-      }
-      .box-3,.box-1,.box{
-        background: black;
-      }
-      .mini-box,.box-box,.box-2{
-        background: teal;
-      }
-      
-      
-    
-      
-      .certificate{
-        background: black;
-      }
-      .anchor{
-      
-        margin:15px;
-      }
-      
-    }
-    
-    .footer{
-      display:flex;
-      text-align:center;
-      justify-content:center;
-      
-    }
-    .anchor{
-      width:100px;
-      height:100px;
-      margin-top:50px;
-      display:flex;
-      align-items:center;
-      background:linear-gradient(to right,black,grey);;
-      
-      
-      
-    }
-  </style>
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
 <html>
   <head>
     <title>my portfolio</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Hurricane&family=Ramaraja&family=Smokum&display=swap" rel="stylesheet">
+
+<style>
+      body{
+/* margin: 0 auto;
+  
+  padding:20px; */
+  background: blanchedalmond;
+  /* font-family: Smokum; */
+
+
+}
+
+#welcome-section{
+
+  padding:20px;
+  
+  margin: 0 auto;
+  border:1px solid blueviolet;
+  border-radius:20px;
+  background:rgb(167, 114, 114);
+  color:rgb(92, 43, 43);
+  
+ 
+  
+}
+
+
+.hurri,span,.text-accent{
+  font-family: Hurricane;
+  
+
+}
+.img-me{
+  width: 16%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow:1px  2px rgb(182, 173, 173);
+}
+.img-box{
+  width:100%;
+  object-fit: cover;
+  /* height:10%; */
+  border-radius: 10px;
+  box-shadow:1px 2px darkmagenta;
+}
+.navbar{
+  /* background-image: url("./images/header-bg.png"); */
+      background: blanchedalmond;
+      background-size: 100%;
+      padding:20px;
+      border-radius: 20px;
+      margin:10px;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 1px 2px white;
+      
+      
+    }
+    a.nav{
+      padding:10px;
+      margin: 10px;
+    }
+    
+    .nav-icon{
+      background: none;
+    }
+    .icon{
+      width:40px;
+      
+      padding: 0;
+      margin:5px;
+      
+    
+
+    }
+    span,.skills,h2,.heading{
+  font-family: ramaraja;
+
+    }
+    
+section{
+  text-align:center;
+}
+span{
+  color:rgb(71, 117, 70);
+}
+.text-accent{
+  color:white;
+}
+.skills{
+  color:rgb(3, 58, 40);
+  
+}
+a{
+      
+      text-decoration:none;
+      padding:8px 18px;
+      margin:auto;
+      color:white;
+      font-weight:bold;
+      background:linear-gradient(to right,black,grey);
+      border-radius: 20px;
+     
+  
+}
+a.cert{
+  border:none;
+  background:none;
+  padding:10px;
+  margin:10px;
+  
+}
+.certificate{
+
+  padding:20px;
+  margin-bottom: 10px;
+  border:1px dotted grey;
+  border-radius:20px;
+  box-shadow: 1px 2px darkred;
+  background:linear-gradient(to right,brown,white);
+
+}
+h3,p{
+  color:rgb(134, 67, 67);
+  font-weight:bold;
+}
+
+.email{
+      display:flex;
+      justify-content: center;
+      align-items: baseline;
+      
+    }
+    .mail{
+      width:20px;
+    
+     
+    }
+    .copy{
+      width: 14px;
+      margin: 2px;
+    }
+section#projects{
+  background:navajowhite;
+
+  font-family:italic;
+  /* border:1px solid chocolate; */
+  border-radius:20px;
+  margin:10px 0px;
+  padding:50px;
+  color:white;
+  display:flex;
+  justify-content:space-evenly;
+  text-align:center;
+  
+  
+}
+.box{
+  align-self: flex-start;
+}
+
+.box,.box-1,.box-2,.box-3,.mini-box,.box-box{
+  border:1px solid white;
+  /* flex-basis:400px; */
+  padding:10px;
+  border-radius:7px;
+  margin:5px;
+  align-self:center;
+  background:cornsilk;
+  box-shadow: 1px 2px whitesmoke;
+  
+}
+
+.box-2,.mini-box,.box-box{
+  background:linear-gradient(to right,purple,grey);
+
+ 
+  
+}
+
+.box,.box-box{
+  padding:40px;
+  
+}
+
+.mini{
+  display:flex;
+  justify-content:space-between;
+  margin:10px;
+  word-break: break;
+}
+ul{
+  list-style:none;
+}
+
+
+.project{
+  
+  background:seashell;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border:1px solid rgb(253, 175, 5); */
+  border-radius:20px;
+  padding:20px;
+  margin-top:0px;
+  margin-bottom: 10px;
+}
+
+
+
+.snake,.eduwell,.app,.trivia,.puppy,.digital{
+  width:auto;
+  height:250px;
+  object-fit:cover;
+  margin:5px;
+  /* padding:10px; */
+  box-shadow: 2px 2px rgb(253, 175, 5);
+  background:white;
+  box-shadow: 1px 2px 1px gray;
+
+}
+.snake{
+  width: 270px;
+}
+.edu{
+  width:100px;
+  margin-left: -115px;
+    margin-top: -126px;
+    background: black;
+}
+.pup,.game{
+  margin-top: -50px;
+    margin-left: -24px;
+    color: black;
+    font-family: 'Hurricane';
+}
+
+ 
+ 
+ 
+
+ .link{
+  
+  background: none;
+ 
+}  
+.heading{
+  background: white;
+  border-radius: 20px;
+  margin-bottom: 0px;
+  padding:5px;
+  font-style: italic;
+  
+  
+}
+.para{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding:10px;
+  font-size: 10px;
+  
+}
+
+
+
+@media (max-width:875px){
+  .flex,section#projects,a{
+    display:block;
+    margin: 20px;
+    
+  }
+  .anchor{
+  padding: 0;
+  margin:10px;
+  font-size: 10px;
+  justify-content: center;
+
+
+  }
+  
+  .navbar{
+    justify-content: space-around;
+    
+  
+    text-align: center;
+  }
+  a{
+    margin:10px;
+    
+    
+  }
+  .project{
+    display: block;
+    width:auto;
+  }
+  
+  .footer{
+    text-align: center;
+  }
+
+  
+  a.cert{
+    padding:0px;
+    margin:2px;
+
+  }
+
+}
+
+
+.footer{
+  display:flex;
+  align-items: center;
+  align-self: center;
+  text-align:center;
+  justify-content:center;
+  /* border:1px solid rgb(172, 151, 192); */
+  /* background: linear-gradient(to right,lightcoral,cornsilk); */
+  /* border-radius:20px; */
+  padding:10px 5px;
+  
+
+  
+}
+
+.anchor {
+  color:bisque;
+    width: 60px;
+    height: 70px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    margin:5px;
+    background: linear-gradient(to right,red,rgb(18, 19, 17));
+}
+
+
+  
+  
+
+
+
+
+
+    </style>
   </head>
   <body>
     <navbar id="navbar">
-      <a href="#welcome-section">WELCOME!</a>
-      <a href="#project">PROJECTS</a>
-      <a href="#certificates">CERTIFICATES</a>
-      <a href="#projects">EDUCATION</a>
-      <a href="#network">NETWORK</a>
-      
+      <div class="navbar">
+          <div>
+          <a href="#welcome-section" class="nav">ABOUT</a>
+          <a href="#projects" class="nav">EDUCATION</a>
+          <a href="#project" class="nav">PROJECTS</a>
+          <a href="#certificates" class="nav">CERTIFICATES</a>
+          <!-- <a href="#network" class="nav">NETWORK</a> -->
+        </div>
+        <div id="network">
+          <a href="https://github.com/poojadby872" target="_blank" class="nav-icon">
+          <img src="./images/github-brands.svg" class="icon">
+        </a>
+
+        <a href="https://www.freecodecamp.org/poojadby872" target="_blank" class="nav-icon"><img src="./images/free-code-camp-brands.svg" class="icon"></a>
+         
+         <a href="https://www.hackerrank.com/poojadby872" target="_blank" class="nav-icon">
+          <img src="./images/hackerrank-brands.svg" class="icon">
+         </a>
+         
+
+      </div>
+
+    
+    </div>
       
     </navbar>
     <section id="welcome-section">
-      <div>
-          <h1>WELCOME TO MY PORTFOLIO</h1>
-          <P>MY NAME IS <span>POOJA</span>.I AM A <span><em>SELF TAUGHT</em></span><em> FRONTEND-DEVELOPER</em>.</P>
-          
-          <P>I have built a few projects using HTML CSS and Javascript
-          </p>
-        
-     </div>
+      <h1 class="hurri">WELCOME TO MY PORTFOLIO</h1>
+      <img src="./images/pooh.jpeg" class="img-me">
+      <h2>Hi! I am <span class="skills" >POOJA</span></h2><br>
+       <div class="box">
+        <p class="hurri">A <span><em> SELF TAUGHT</em></span><em> FRONTEND-DEVELOPER</em></p>
+      
+      <p>and have garnered knowledge through several open source curricullum.
+      </p>
+    <p>I love making web pages and templates.<h1><span> I actually enjoy what i do</span> </h1><br>
+    and have built several projects all using HTML, CSS and Javascript
+      </p>
+    <p >Currently i am learning React</p>
+  </div>
+      
     </section>
     <section id="projects">
-     <!-- <div class="box"> -->
-       <!-- <div class="box-box"> -->
-      <!-- <p> I HAVE MADE A PROJECT <span>snake game</span> using these language:</p>
+     <div class="box">
+       <div class="box-box">
+      <!-- <p> I have built A few projects  using these languages:</p>
       <ul>
         <li><span>HTML</span></li>
         <li><span>CSS</span></li>
         <li><span>JAVASCRIPT</span></li>
-      </ul>
+      </ul> -->
+
+      <!-- <img src="./images/pooh.jpeg" class="img-box"> -->
+
       
-      <div  class="project-tile">
+      
+      <!-- <div  class="project-tile">
         <a  id ="profile-link" href="https://github.com/poojadby872" class="cert">click here to see my profile!</a>
-      </div>
-     </div> -->
-     <div  class="box-3">
-      <h3>SKILLS</h3>
-      <div class="mini-box">
-        <p>HTML</p>
-   </div>
-   <div class="mini-box">
-    <p>CSS</p>
-</div>
-<div class="mini-box">
-<p>JavaScript</p>
-</div>
-    
+      -->
+
+      
+        <p class="text-accent">CSS  SPECIALIZATION</p>
+        <hr>
         
-    
+        <div class="email"><img src="./images/envelope-solid.svg" class="mail">
+        <a href="#" class="cert">poojadby872@gmail.com</a>
+        </div>
+        
+
+        
+      </div>
+     </div>
     </div>
-    <!-- </div> -->
      <div  class="box-1">
          <div>
-           <h3>EDUCATION</h3>
+           <h3><span>EDUCATION</span></h3>
          </div>
        <div class="mini">
           <P>Model School</P>
-         <p>9.8 CGPA</p>
+         <p>9.8cgpa</p>
        </div>
        <div class="mini">
          <div>
@@ -304,92 +463,127 @@
           
      
       
-     
+     <div  class="box-2">
+        <h3 class="skills">SKILLS</h3>
+       <p class="text-accent">HTML</P>
+       <p class="text-accent">CSS</P>
+       <p class="text-accent">JAVASCRIPT</P>
+          
+      
+      </div>
+    
    </div>
    <div class="box-3">
-     <h3>PROFESSIONAL EXPERIENCES</p>
+     <h3><span>PROFESSIONAL EXPERIENCE</span></p>
         <div class="mini-box">
-          <p>FRESHER</p>
+          <p class="text-accent">FRESHER</p>
      </div>
      <div class="mini-box">
-          <p>SELF-TAUGHT</p>
+          <p class="text-accent">SELF-TAUGHT</p>
      </div>
      <div class="mini-box">
-          <p>NO PROFESSIONAL EXPERIENCE</p>
+          <p class="text-accent">NO PROFESSIONAL EXPERIENCE</p>
      </div>
      
    </div>
    
     </section>
-  <section id="project" class="project">
+  <section id="project" >
+    <div class="heading"><h2>Here are some of my work</h2></div>
+    <div class="project">
     <div>
-      <img src="https://images.unsplash.com/photo-1619577169583-c87f529f48f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0ODA5MjMxMg&ixlib=rb-1.2.1&q=80&w=400" class="snake">
-     <a href="https://github.com/poojadby872/snake-game" class="link">click to play snake-game</a>
+      <a href="https://github.com/poojadby872/snake-game" class="link">
+        <img src="./images/snk.webp" class="snake">
+     </a>
+    <p class="game"> SNAKE GAME</p>
     </div>
     <div>
-      <img src="https://images.unsplash.com/photo-1514369118554-e20d93546b30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0ODA5Mjg2OA&ixlib=rb-1.2.1&q=80&w=400" class="eduwell">
-      <a href="#" class="link">eduwell template</a>
+      <a href="https://github.com/poojadby872/eduwell-template" class="link">
+         <img src="./images/banner-right-image.png" class="eduwell">
+      </a>
+      <img src="./images/templatemo-eduwell.png" class="edu">
     </div>
     <div>
-      <img src="https://images.unsplash.com/photo-1513595207829-9f414c0665f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0ODA5MzAyOA&ixlib=rb-1.2.1&q=80&w=400" class="app">
-     <a href="#" class="link">flex-button</a>
-    </div>
-    
-    <div>
-      <img src="https://images.unsplash.com/photo-1615751072497-5f5169febe17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0ODA5NjU1MA&ixlib=rb-1.2.1&q=80&w=400" class="puppy">
-     <a href="#" class="link">coorgi page</a>
-    </div>
-    
-    <div>
-      <img src="https://images.unsplash.com/photo-1570937943292-a574bd5bc722?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0ODA5NjgwOA&ixlib=rb-1.2.1&q=80&w=400" class="trivia">
-     <a href="#" class="link">quiz-trivia</a>
+      <a href="#" class="link">
+         <!-- <img src="https://images.unsplash.com/photo-1513595207829-9f414c0665f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0ODA5MzAyOA&ixlib=rb-1.2.1&q=80&w=400" class="app"> -->
+     </a>
     </div>
     
     <div>
-      <img src="https://images.unsplash.com/photo-1530319067432-f2a729c03db5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0ODA5NjcyMg&ixlib=rb-1.2.1&q=80&w=400" class="digital">
-     <a href="#" class="link">digital app</a>
+      <a href="https://github.com/poojadby872/coorgi-page" class="link">
+         <img src="https://images.unsplash.com/photo-1615751072497-5f5169febe17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0ODA5NjU1MA&ixlib=rb-1.2.1&q=80&w=400" class="puppy">
+       </a>
+       <p class="pup">PUPPY TIMES</p>
     </div>
+    
+    <div>
+      <a href="#" class="link">
+         <!-- <img src="https://images.unsplash.com/photo-1570937943292-a574bd5bc722?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0ODA5NjgwOA&ixlib=rb-1.2.1&q=80&w=400" class="trivia"> -->
+      </a>
+    </div>
+    
+    <div>
+      <a href="#" class="link">
+         <!-- <img src="https://images.unsplash.com/photo-1530319067432-f2a729c03db5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0ODA5NjcyMg&ixlib=rb-1.2.1&q=80&w=400" class="digital"> -->
+     </a>
+    </div>
+  </div>
     
   </section>
 
 
 <section id="certificates" class="certificate">
  
-  <h3>OPEN SOURCE CERTIFICATIONS:</h3>
+  <h3 class="skills">OPEN SOURCE CERTIFICATIONS </h3>
   <ul>
     <!-- <li>
-      <a href="https://freecodecamp.org/certification/poojadby872/javascript-algorithms-and-data-structures" class="cert">freeCodeCamp: Data Structure and Algorithm in Javascript</a>
-    </li> -->
+      <a href="https://freecodecamp.org/certification/poojadby872/javascript-algorithms-and-data-structures" target="_blank" class="cert">freeCodeCamp: Data Structure and Algorithm in Javascript</a>
+    </li><br> -->
     
     <li>
       <a href="https://freecodecamp.org/certification/poojadby872/responsive-web-design" target="_blank" class="cert">freeCodeCamp: Responsive Web Design</a>
-    </li>
+    </li><br>
     <li>
       <a href="https://www.hackerrank.com/certificates/b302c2a9c837" target="_blank" class="cert">HackerRank: Python Basics</a>
-    </li>
+    </li><br>
   </ul>
  
 </section>
 
 
 
-<footer id="network" class="footer">
+<footer  >
+  <div class="footer">
   <div>
-    <img src="" class="git">
-    <a href="https://github.com/poojadby872" class="anchor">
-my github link</a>
+
+    <a href="#navbar" class="anchor">click
+   </a>
   </div>
   
   <div>
-    <img src="" class="linked">
-    <a href="" class="anchor">my linkedIn account</a>
+    
+    <a href="#navbar" class="anchor">back</a>
   </div>
+
+  <div>
+
+    <a href="#navbar" class="anchor">TO
+   </a>
+  </div>
+
+  <div>
+
+    <a href="#navbar" class="anchor">top
+   </a>
+  </div>
+</div>
+
+  <p class="para">
+    copyright
+    <img src="./images/copyright-solid.svg" class="copy">
+    pooja
+  </p>
   
 </footer>
   </body>
-</html>
-<!-- partial -->
-  <!-- <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script> -->
-
-</body>
 </html>
